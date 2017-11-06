@@ -17,7 +17,7 @@ public class CPSC_240_GroupProject1 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("This is my first commit!");
-        
+        System.out.println("This is my second commit!");
     }
     
 }
