@@ -6,6 +6,16 @@
 package cpsc_240_groupproject1;
 
 /**
+ * Import statements.
+ */
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.*;
+import java.util.ArrayList;
+
+
+/**
  *
  * @author KNK
  */
