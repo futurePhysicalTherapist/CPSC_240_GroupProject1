@@ -25,9 +25,14 @@ public class CPSC_240_GroupProject1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("This is my first commit!");
-        System.out.println("This is my second commit!");
+         
+        /**
+         * Welcome the user to the program.
+         */
+        System.out.println(" ");
+        System.out.println("Welcome to the WannaStay Reservation Managment System.");
+        System.out.println(" ");
+        
     }
     
 }
