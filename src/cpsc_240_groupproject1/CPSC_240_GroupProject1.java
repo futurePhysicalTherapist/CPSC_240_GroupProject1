@@ -33,6 +33,13 @@ public class CPSC_240_GroupProject1 {
         System.out.println("Welcome to the WannaStay Reservation Managment System.");
         System.out.println(" ");
         
-    }
-    
+        
+        Hotel newHotel = new Hotel();
+        
+        Room newRoom = new Room();
+        
+        User newUser = new User();
+        
+             
+}
 }
