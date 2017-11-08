@@ -48,4 +48,5 @@ public class Hotel {
     public void setHasBreakfast(boolean breakfast){ hasBreakfast = breakfast; }
     
     public void setAirportShuttle(boolean shuttle){ airportShuttle = shuttle; }
+    System.out.print("ajfsdkl;f");
 }
