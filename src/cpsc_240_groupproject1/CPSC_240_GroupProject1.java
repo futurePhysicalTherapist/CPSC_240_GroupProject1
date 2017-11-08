@@ -45,13 +45,13 @@ public class CPSC_240_GroupProject1 {
          * Create Scanner object in & foodProductsAL ArrayList.
          */
         Scanner in = new Scanner(System.in); 
-        ArrayList <FoodProduct> foodProductsAL = new ArrayList<>();
+        ArrayList <Reservation> reservationsAL = new ArrayList<>();
         
         
         /**
          * Automatically read from inventory.txt file.
          */
-         String fileName = "inventory.txt"; 
+         String fileName = "reservations.txt"; 
          
                  
         /**
@@ -67,11 +67,11 @@ public class CPSC_240_GroupProject1 {
             //System.out.println("File is not null");
             while(fileIn.hasNextLine()){
                 //System.out.println("Reading stuff in");
-                String foodProductInfo = fileIn.nextLine();
-                FoodProduct newFoodProduct = new FoodProduct(foodProductInfo);
-                foodProductsAL.add(newFoodProduct);
+                String reservationInfo = fileIn.nextLine();
+                Reservation newReservation = new Reservation(reservationInfo);
+                reservationsAL.add(newReservation);
             } 
-            System.out.println("The inventory in the file inventory.text has been successfully imported");
+            System.out.println("The reservation info in the file reservations.text has been successfully imported");
             System.out.println(" ");
         }
         
@@ -99,53 +99,87 @@ public class CPSC_240_GroupProject1 {
         
         while (answerIsNotQ == true){
             
-            /**
-            * Lists menu options & reads selection.
-            */
-            System.out.println(" ");
-            System.out.println("Please select an option from the following menu & "
-                    + "type the letter below");
-            System.out.println("U: Upload inventory");
-            System.out.println("P: Print the current inventory sorted by product name");
-            System.out.println("E: List the current inventory sorted by expiration date");
-            System.out.println("S: Search for an item by product name");
-            System.out.println("D: Decrement the quantity for an item");
-            System.out.println("R: Remove/discontinue an item.");
-            System.out.println("Q: Quit the system");
-            System.out.println(" ");
+            
+            System.out.println("Are you a hotel manager? (Please enter YES OR NO");
+            String answer = in.nextLine();
+            
+            if(answer.equals("YES")){
+                System.out.println("Please login to the system.");
+                
+                 /**
+                * Lists menu options & reads selection.
+                */
+                System.out.println(" ");
+                System.out.println("Please select an option from the following menu & "
+                        + "type the letter below");
+                System.out.println(" ");
+                System.out.println("A: Approve reservation");
+                System.out.println("B: Block user");
+                System.out.println("R: Set price");
+                System.out.println("R: Upgrade membership status");
+                System.out.println("R: Delete user account");
+                System.out.println("Q: Quit the system");
+                System.out.println(" ");
+                System.out.println(" ");
+            }
+            
+            else {
+                System.out.println("Please login to the system.");
+          
+                
+                /**
+                * Lists menu options & reads selection.
+                */
+                System.out.println(" ");
+                System.out.println("Please select an option from the following menu & "
+                        + "type the letter below");
+                System.out.println(" ");
+
+                System.out.println("V: View public schedule as guest");
+                System.out.println("R: Register an account");
+                System.out.println("S: Search for a room (must be a registered user)");
+                System.out.println("P: Pay for a room");
+                System.out.println("C: Check for approved reservation.");
+                System.out.println("M: Cancel/Modify a reservation");
+                System.out.println("F: Leave feedback");
+                System.out.println("R: Rate the hotel");
+                System.out.println(": Check membership status.");
+                System.out.println("Q: Quit the system");
+                System.out.println(" ");
+                System.out.println(" ");
+            }
+            
 
             String menuSelection = in.nextLine();
 
             if(menuSelection != "Q"){
                 Option selectedOption = new Option(menuSelection, 
-                        foodProductsAL);  
+                        reservationsAL);  
             }
 
             if(menuSelection.equals("Q")){
                 answerIsNotQ = false;
                 System.out.println(" ");
                 System.out.println("You have quit the program. "
-                + "Your current inventory has been saved.");
+                + "Your reservation records have been saved.");
                 System.out.println(" ");
         
                 try {
                    //https://stackoverflow.com/questions/6994518/how-to-delete-the-content-of-text-file-without-deleting-itself
-                   PrintWriter file = new PrintWriter("inventory.txt");
+                   PrintWriter file = new PrintWriter("reservations.txt");
                    file.print("");
 
-                   for(int i = 0; i < foodProductsAL.size(); i++){
+                   for(int i = 0; i < reservationsAL.size(); i++){
                       file.println(
-                              foodProductsAL.get(i).getName() + "," +
-                              foodProductsAL.get(i).getUPC() + "," +
-                              foodProductsAL.get(i).getQuantity() + "," +
-                              foodProductsAL.get(i).getPrice() + "," +
-                              foodProductsAL.get(i).getExpirationDate());
+                              reservationsAL.get(i).getDate() + "," +
+                              reservationsAL.get(i).getTime() + "," +
+                              reservationsAL.get(i).getName());
                    }
 
                    file.close();
 
                } catch (FileNotFoundException e) {
-                   System.out.println("Error, could not open inventory.txt");
+                   System.out.println("Error, could not open reservations.txt");
                }
             }
         }
