@@ -100,7 +100,7 @@ public class CPSC_240_GroupProject1 {
         while (answerIsNotQ == true){
             
             
-            System.out.println("Are you a hotel manager? (Please enter YES OR NO");
+            System.out.println("Are you a hotel manager? (Please enter YES OR NO)");
             String answer = in.nextLine();
             
             if(answer.equals("YES")){
