@@ -118,9 +118,7 @@ public class CPSC_240_GroupProject1 {
                 System.out.println("R: Set price");
                 System.out.println("R: Upgrade membership status");
                 System.out.println("R: Delete user account");
-                System.out.println("Q: Quit the system");
-                System.out.println(" ");
-                System.out.println(" ");
+                System.out.println("Q: Quit the system\n\n");
             }
             
             else {

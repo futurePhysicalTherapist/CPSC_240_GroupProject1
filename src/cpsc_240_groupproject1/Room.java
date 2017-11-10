@@ -10,5 +10,5 @@ package cpsc_240_groupproject1;
  * @author KNK
  */
 public class Room {
-    
+    System.out.println("This is Chase's test.");
 }
