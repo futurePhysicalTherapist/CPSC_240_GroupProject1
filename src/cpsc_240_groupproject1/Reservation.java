@@ -5,7 +5,7 @@
  */
 package cpsc_240_groupproject1;
 
-import java.time.LocalTime;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,14 +14,14 @@ import java.time.LocalTime;
 public class Reservation {
 
 String name;
-LocalTime time;
+String time;
 String date;
     
     
     
     public Reservation(String reservationInfo)
     {    
-        
+               
     }
     
     public String getDate()
@@ -34,7 +34,7 @@ String date;
         return name;
     }
     
-    public LocalTime getTime()
+    public String getTime()
     {
         return time;
     }  
