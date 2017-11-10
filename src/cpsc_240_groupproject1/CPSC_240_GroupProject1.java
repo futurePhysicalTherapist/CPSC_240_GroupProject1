@@ -29,7 +29,8 @@ public class CPSC_240_GroupProject1 {
         /**
          * Welcome the user to the program.
          */
-        
+                System.out.println("Sierra was here");
+
         System.out.println(" ");
         System.out.println("Welcome to the WannaStay Reservation Managment System.");
         System.out.println(" ");
