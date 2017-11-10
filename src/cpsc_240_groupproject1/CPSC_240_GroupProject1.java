@@ -29,11 +29,14 @@ public class CPSC_240_GroupProject1 {
         /**
          * Welcome the user to the program.
          */
+        
+        System.out.println("Jackie was here.");
+        
         System.out.println(" ");
         System.out.println("Welcome to the WannaStay Reservation Managment System.");
         System.out.println(" ");
         
-        
+       
         Hotel newHotel = new Hotel();
         
         Room newRoom = new Room();
