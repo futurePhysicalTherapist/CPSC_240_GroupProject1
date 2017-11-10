@@ -104,7 +104,10 @@ public class CPSC_240_GroupProject1 {
             String answer = in.nextLine();
             
             if(answer.equals("YES")){
-                System.out.println("Please login to the system.");
+                System.out.println("Please enter your username:");
+                String username = in.nextLine();
+                System.out.println("Please enter your password:");
+                String password = in.nextLine();
                 
                  /**
                 * Lists menu options & reads selection.
@@ -121,7 +124,10 @@ public class CPSC_240_GroupProject1 {
             }
             
             else {
-                System.out.println("Please login to the system.");
+                 System.out.println("Please enter your username:");
+                 String username = in.nextLine();
+                 System.out.println("Please enter your password:");
+                 String password = in.nextLine();
           
                 
                 /**
