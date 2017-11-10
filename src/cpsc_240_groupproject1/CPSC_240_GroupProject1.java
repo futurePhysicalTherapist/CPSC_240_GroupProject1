@@ -80,8 +80,7 @@ public class CPSC_240_GroupProject1 {
          */   
         }
         catch(FileNotFoundException ex){
-            System.out.println("This filename does not exist");
-            System.out.println(" ");
+            System.out.println("This filename does not exist\n");
             fileName = null;
         } 
         
@@ -142,9 +141,7 @@ public class CPSC_240_GroupProject1 {
                 System.out.println("F: Leave feedback");
                 System.out.println("R: Rate the hotel");
                 System.out.println(": Check membership status.");
-                System.out.println("Q: Quit the system");
-                System.out.println(" ");
-                System.out.println(" ");
+                System.out.println("Q: Quit the system\n\n");
             }
             
 
