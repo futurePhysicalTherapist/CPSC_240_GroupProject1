@@ -21,7 +21,12 @@ String date;
     
     public Reservation(String reservationInfo)
     {    
-               
+       
+        String [] separatedReservationInfo = reservationInfo.split(",");
+           
+            date = separatedReservationInfo[0];
+            time = separatedReservationInfo[1];
+            time = separatedReservationInfo[2];
     }
     
     public String getDate()
@@ -29,13 +34,13 @@ String date;
         return date;
     }
     
-    public String getName()
-    {
-        return name;
-    }
-    
     public String getTime()
     {
         return time;
     }  
+    
+    public String getName()
+    {
+        return name;
+    } 
 }
