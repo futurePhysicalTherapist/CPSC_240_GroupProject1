@@ -73,7 +73,7 @@ public class CPSC_240_GroupProject1 {
                 Reservation newReservation = new Reservation(reservationInfo);
                 reservationsAL.add(newReservation);
             } 
-            System.out.println("The reservation info in the file reservations.text has been successfully imported");
+            System.out.println("The reservation info in the file reservations.text has been successfully imported!");
             System.out.println(" ");
         }
         
@@ -100,7 +100,7 @@ public class CPSC_240_GroupProject1 {
         while (answerIsNotQ == true){
             
             
-            System.out.println("Are you a hotel manager? (Please enter YES OR NO)");
+            System.out.println("Are you a hotel manager? Please enter YES OR NO.");
             String answer = in.nextLine();
             
             if(answer.equals("YES")){
