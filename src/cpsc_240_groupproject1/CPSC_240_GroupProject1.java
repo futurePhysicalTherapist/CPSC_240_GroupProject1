@@ -89,8 +89,7 @@ public class CPSC_240_GroupProject1 {
          * Comment out this section when you want to see the specific error message
          */
         catch(Exception e){
-            System.out.println("Some other error occured");
-            System.out.println(" ");
+            System.out.println("Some other error occured\n");
             fileName = null;
         } 
         
@@ -110,8 +109,7 @@ public class CPSC_240_GroupProject1 {
                 */
                 System.out.println(" ");
                 System.out.println("Please select an option from the following menu & "
-                        + "type the letter below");
-                System.out.println(" ");
+                        + "type the letter below\n");
                 System.out.println("A: Approve reservation");
                 System.out.println("B: Block user");
                 System.out.println("R: Set price");
@@ -129,8 +127,7 @@ public class CPSC_240_GroupProject1 {
                 */
                 System.out.println(" ");
                 System.out.println("Please select an option from the following menu & "
-                        + "type the letter below");
-                System.out.println(" ");
+                        + "type the letter below\n");
 
                 System.out.println("V: View public schedule as guest");
                 System.out.println("R: Register an account");
@@ -156,13 +153,12 @@ public class CPSC_240_GroupProject1 {
                 answerIsNotQ = false;
                 System.out.println(" ");
                 System.out.println("You have quit the program. "
-                + "Your reservation records have been saved.");
-                System.out.println(" ");
+                + "Your reservation records have been saved.\n");
         
                 try {
                    //https://stackoverflow.com/questions/6994518/how-to-delete-the-content-of-text-file-without-deleting-itself
-                   PrintWriter file = new PrintWriter("reservations.txt");
-                   file.print("");
+                   PrintWriter file = new PrintWriter("reservations.txt\n");
+          
 
                    for(int i = 0; i < reservationsAL.size(); i++){
                       file.println(
