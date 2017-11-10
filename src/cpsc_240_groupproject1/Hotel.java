@@ -31,22 +31,49 @@ public class Hotel {
         airportShuttle = shuttle;
     }
     
-    public String getHotelName(){ return hotelName; }
+    public String getHotelName()
+    { 
+        return hotelName; 
+    }
     
-    public String getLocation(){ return location; }
+    public String getLocation()
+    { 
+        return location; 
+    }
     
-    public boolean getHasPool(){ return hasPool; }
+    public boolean getHasPool()
+    { 
+        return hasPool; 
+    }
     
-    public boolean getHasBreakfast(){ return hasBreakfast; }
+    public boolean getHasBreakfast()
+    { 
+        return hasBreakfast; 
+    }
     
-    public boolean getAirportShuttle(){ return airportShuttle; }
+    public boolean getAirportShuttle()
+    { 
+        return airportShuttle;
+    }
     
-    public void setLocation(String hotelLoc){ location = hotelLoc; }
+    public void setLocation(String hotelLoc)
+    { 
+        location = hotelLoc; 
+    }
     
-    public void setHasPool(boolean pool){ hasPool = pool; }
+    public void setHasPool(boolean pool)
+    { 
+        hasPool = pool; 
+    }
     
-    public void setHasBreakfast(boolean breakfast){ hasBreakfast = breakfast; }
+    public void setHasBreakfast(boolean breakfast)
+    { 
+        hasBreakfast = breakfast;
+    }
     
-    public void setAirportShuttle(boolean shuttle){ airportShuttle = shuttle; }
+    public void setAirportShuttle(boolean shuttle)
+    { 
+        airportShuttle = shuttle; 
+    }
     
 }

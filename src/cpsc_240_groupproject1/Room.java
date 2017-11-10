@@ -9,9 +9,11 @@ package cpsc_240_groupproject1;
  *
  * @author KNK
  */
-public class Room {
+public class Room 
+{
     
-    public Room(){
+    public Room()
+    {
         System.out.println("This is Chase's test.");
     }
 }

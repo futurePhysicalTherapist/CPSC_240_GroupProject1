@@ -19,18 +19,23 @@ String date;
     
     
     
-    public Reservation(String reservationInfo){    
+    public Reservation(String reservationInfo)
+    {    
+        
     }
     
-    public String getDate(){
+    public String getDate()
+    {
         return date;
     }
     
-    public String getName(){
+    public String getName()
+    {
         return name;
     }
     
-    public LocalTime getTime(){
+    public LocalTime getTime()
+    {
         return time;
     }  
 }

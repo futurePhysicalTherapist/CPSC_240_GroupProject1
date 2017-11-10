@@ -9,6 +9,7 @@ package cpsc_240_groupproject1;
  *
  * @author KNK
  */
-public class User {
+public class User 
+{
     
 }
