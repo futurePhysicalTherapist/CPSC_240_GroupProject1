@@ -23,6 +23,7 @@ public class CPSC_240_GroupProject1 {
 
     /**
      * @param args the command line arguments
+     * @version 11/15/17 
      */
     public static void main(String[] args) {
          
@@ -118,7 +119,7 @@ public class CPSC_240_GroupProject1 {
                         + "type the letter below\n");
                 System.out.println("A: Approve reservation");
                 System.out.println("B: Block user");
-                System.out.println("S: Set price");
+                System.out.println("X: Set price");
                 System.out.println("U: Upgrade membership status");
                 System.out.println("D: Delete user account");
                 System.out.println("Q: Quit the system\n\n");
@@ -129,10 +130,10 @@ public class CPSC_240_GroupProject1 {
              * Code dealing with registered and non-registered users. 
              */
             else {
-                 System.out.println("Please enter your username:");
-                 String username = in.nextLine();
-                 System.out.println("Please enter your password:");
-                 String password = in.nextLine();
+                System.out.println("Please enter your username:");
+                String username = in.nextLine();
+                System.out.println("Please enter your password:");
+                String password = in.nextLine();
           
                 
                 /**
@@ -149,7 +150,7 @@ public class CPSC_240_GroupProject1 {
                 System.out.println("C: Check for approved reservation.");
                 System.out.println("M: Cancel/Modify a reservation");
                 System.out.println("F: Leave feedback");
-                System.out.println("R: Rate the hotel");
+                System.out.println("H: Rate the hotel");
                 System.out.println("S: Check membership status.");
                 System.out.println("Q: Quit the system\n\n");
             }

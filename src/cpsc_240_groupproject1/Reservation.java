@@ -10,6 +10,7 @@ import java.util.ArrayList;
 /**
  *
  * @author KNK
+ * @version 11/15/17 
  */
 public class Reservation {
 
