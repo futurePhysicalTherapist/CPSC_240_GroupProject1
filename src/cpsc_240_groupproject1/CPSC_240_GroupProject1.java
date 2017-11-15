@@ -137,7 +137,7 @@ public class CPSC_240_GroupProject1 {
 
                 System.out.println("V: View public schedule as guest");
                 System.out.println("R: Register an account");
-                System.out.println("L: Look for a room (must be a registered user)");
+                System.out.println("L: Look for and/or reserve a room (must be a registered user)");
                 System.out.println("P: Pay for a room");
                 System.out.println("C: Check for approved reservation.");
                 System.out.println("M: Cancel/Modify a reservation");

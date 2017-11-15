@@ -101,14 +101,26 @@ public class Option {
         
         System.out.println("Please type the calendar day you "
                 + "would like to view using the following format:"
-                + "MM.DD.YYYY ");
+                + "MM.DD.YYYY\n\n");
         
         String date = in.nextLine();
-        System.out.println("Rooms reserved on" + date + ":");
+        
+        boolean reservationsExist = false;
+                
         for(int i = 0; i < reservationsAL.size(); i++){
             if(reservationsAL.get(i).getDate().equals(date)){
+                reservationsExist = true;
                 //System.out.println(Reservation.getReservationInformation());
+                System.out.println(
+                reservationsAL.get(i).getRoomNumber() + "\t" +
+                reservationsAL.get(i).getDate() + "\t" +
+                reservationsAL.get(i).getTime() + "\t" +
+                reservationsAL.get(i).getName() + "\n\n"); 
             }
+        }
+        
+        if(reservationsExist = false){
+            System.out.println("There are no reservations on this date.");
         }
     }
     
@@ -121,7 +133,7 @@ public class Option {
     }
     
     /**
-     * Option L - Look for a room (must be a registered user).
+     * Option L - Look for a room/and or reserve a room (must be a registered user).
      */
     public void optionL(){
         
