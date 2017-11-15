@@ -5,7 +5,7 @@
  */
 package cpsc_240_groupproject1;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 
 /**
@@ -14,20 +14,71 @@ import java.util.ArrayList;
  */
 public class Room 
 {
-    private ArrayList<Room> room;
+    String floor; // Basement, first, second, third
     int roomNumber;
+    boolean isAvailable;
 
-    
     public Room()
     {        
-        room = new ArrayList<Room>();
-        
-        
+        floor = null;
+        roomNumber = 0;
+        isAvailable = false;  
     }
-    public void addRoom()
+    
+    public Room(boolean avail, int roomNum, String floorName)
     {
-        //room.add(addRoom);
+        isAvailable = avail;
+        roomNumber = roomNum;
+        floor = floorName;
     }
+    
+    /**
+     * Have my getters
+     * @return 
+     */
+     public boolean getIsAvailable()
+    { 
+        return isAvailable; 
+    }
+    
+    public int getRoomNumber()
+    { 
+        return roomNumber; 
+    }
+    
+    public String getFloor()
+    {
+        return floor;
+    }
+    
+    /**
+     * Have my setters
+     * @param avail 
+     */
+     public void setIsAvailable(boolean avail)
+     {
+         isAvailable = avail;
+     }
+     
+     public void setRoomNumber(int roomNum)
+     {
+         roomNumber = roomNum;
+     }
+     
+     public void setFloor(String floorName)
+     {
+         floor = floorName;
+     }
+    
+    
+
+    
+    //public void addRoom()
+    //{
+        //room.add(addRoom);
+    //}
+    
+    //public void setRoom()
     
     
 }
