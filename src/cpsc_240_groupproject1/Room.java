@@ -5,15 +5,29 @@
  */
 package cpsc_240_groupproject1;
 
+import java.util.ArrayList;
+
+
 /**
  *
  * @author KNK
  */
 public class Room 
 {
+    private ArrayList<Room> room;
+    int roomNumber;
+
     
     public Room()
-    {
-        System.out.println("This is Chase's test.");
+    {        
+        room = new ArrayList<Room>();
+        
+        
     }
+    public void addRoom()
+    {
+        //room.add(addRoom);
+    }
+    
+    
 }

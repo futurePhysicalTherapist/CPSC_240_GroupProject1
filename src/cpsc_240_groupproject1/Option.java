@@ -12,7 +12,8 @@ import java.util.ArrayList;
  */
 public class Option {
     
-    public Option(String menuSelection, ArrayList reservationsAL){
+    public Option(String menuSelection, ArrayList reservationsAL)
+    {
         
     }
     
