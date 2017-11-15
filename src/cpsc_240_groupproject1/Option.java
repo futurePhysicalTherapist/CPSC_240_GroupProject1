@@ -80,9 +80,6 @@ public class Option {
         if(menuSelection.equals("S")){
             optionS();
         }
-        if(menuSelection.equals("Q")){
-            optionB();
-        }
     }
     
  
@@ -107,6 +104,7 @@ public class Option {
     }
     
     public void optionR(){
+         Registered newRegistered = new Registered();
         
     }
     
@@ -137,8 +135,4 @@ public class Option {
     public void optionS(){
         
     }
-    
-    public void optionQ(){
-        
-    }  
 }
