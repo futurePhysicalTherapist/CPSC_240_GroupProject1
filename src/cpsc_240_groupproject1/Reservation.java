@@ -14,9 +14,11 @@ import java.util.ArrayList;
  */
 public class Reservation {
 
+String roomNumber;
 String name;
 String time;
 String date;
+String roomReservationInformation;
     
     
     
@@ -25,9 +27,14 @@ String date;
        
         String [] separatedReservationInfo = reservationInfo.split(",");
            
-            date = separatedReservationInfo[0];
-            time = separatedReservationInfo[1];
-            time = separatedReservationInfo[2];
+        roomNumber = separatedReservationInfo[0];  
+        date = separatedReservationInfo[1];
+        time = separatedReservationInfo[2];
+        name = separatedReservationInfo[3];
+    }
+    
+    public String getRoomNumber(){
+        return roomNumber;
     }
     
     public String getDate()
@@ -44,4 +51,11 @@ String date;
     {
         return name;
     } 
+    
+    /*
+    public String getReservationInformation(){
+        roomReservationInformation = roomNumber + " " + date + " " + time + " " + name;
+        return roomReservationInformation;
+    }
+    */
 }

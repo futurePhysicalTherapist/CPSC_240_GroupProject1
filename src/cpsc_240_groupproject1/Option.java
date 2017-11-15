@@ -16,31 +16,12 @@ import java.util.Scanner;
 public class Option {
     String menuSelection;
     ArrayList <Reservation> reservationsAL;
+    Scanner in = new Scanner(System.in); 
     
     public Option(String menuSelection, ArrayList reservationsAL){
         this.menuSelection = menuSelection;
         this.reservationsAL = reservationsAL;
-        
-       
-        System.out.println("A: Approve reservation");
-                System.out.println("B: Block user");
-                System.out.println("X: Set price");
-                System.out.println("U: Upgrade membership status");
-                System.out.println("D: Delete user account");
-                System.out.println("Q: Quit the system\n\n");
-                
-             
-                System.out.println("V: View public schedule as guest");
-                System.out.println("R: Register an account");
-                System.out.println("L: Look for a room (must be a registered user)");
-                System.out.println("P: Pay for a room");
-                System.out.println("C: Check for approved reservation.");
-                System.out.println("M: Cancel/Modify a reservation");
-                System.out.println("F: Leave feedback");
-                System.out.println("H: Rate the hotel");
-                System.out.println("S: Check membership status.");
-                System.out.println("Q: Quit the system\n\n");
-        
+               
         if(menuSelection.equals("B")){
             optionB();
         }
@@ -54,7 +35,7 @@ public class Option {
             optionD();
         }    
         if(menuSelection.equals("V")){
-            optionV();
+            optionV(reservationsAL);
         }
         if(menuSelection.equals("R")){
             optionR();
@@ -82,56 +63,108 @@ public class Option {
         }
     }
     
- 
+    
+    /**
+    * Option B - Block a user. -- THIS ONE MIGHT BE TRICKY TO CODE!
+    */
     public void optionB(){
         
     }
     
+    /**
+     * Option X - Set price.
+     */
     public void optionX(){
         
     }
     
+    /**
+     * Option U - Upgrade membership status.
+     */
     public void optionU(){
         
     }
     
+    /**
+     * Option D - Delete user account. 
+     */
     public void optionD(){
         
     }
-    
-    public void optionV(){
+             
+    /**
+    * Option V - View public schedule as guest.
+    */
+    public void optionV(ArrayList <Reservation> reservationsAL){
         
+        this.reservationsAL = reservationsAL;
+        
+        System.out.println("Please type the calendar day you "
+                + "would like to view using the following format:"
+                + "MM.DD.YYYY ");
+        
+        String date = in.nextLine();
+        System.out.println("Rooms reserved on" + date + ":");
+        for(int i = 0; i < reservationsAL.size(); i++){
+            if(reservationsAL.get(i).getDate().equals(date)){
+                //System.out.println(Reservation.getReservationInformation());
+            }
+        }
     }
     
+    /**
+     * Option R - Register an account.
+     */
     public void optionR(){
          Registered newRegistered = new Registered();
         
     }
     
+    /**
+     * Option L - Look for a room (must be a registered user).
+     */
     public void optionL(){
         
     }
     
+    /**
+     * Option P - Pay for a room.
+     */
     public void optionP(){
         
     }
     
+    /**
+     * Option C - Check for approved reservation.
+     */
     public void optionC(){
-        
+    
     }
     
+    /**
+     * Cancel/Modify a reservation").
+     */    
     public void optionM(){
         
     }
     
+    /**
+     * Option F - Leave feedback
+     */
     public void optionF(){
         
     }
     
+    /**
+     * Option H – Rate the hotel.
+     */
     public void optionH(){
         
     }
     
+    /**
+     * Option S – Check membership status.
+     */
     public void optionS(){
         
     }
