@@ -20,9 +20,10 @@ import java.util.ArrayList;
  * @author KNK
  */
 public class CPSC_240_GroupProject1 {
-
+    
     /**
      * @param args the command line arguments
+     * @version 11/15/17 
      */
     public static void main(String[] args) {
          
@@ -31,19 +32,11 @@ public class CPSC_240_GroupProject1 {
          */
 
         System.out.println(" ");
-        System.out.println("Welcome to the WannaStay Reservation Managment System.");
+        System.out.println("Welcome to the WannaStay Reservation Management System.");
         System.out.println(" ");
-        
-       
-        Hotel newHotel = new Hotel();
-        
-        Room newRoom = new Room();
-        
-        User newUser = new User();
-        
-        
+         
         /**
-         * Create Scanner object in & foodProductsAL ArrayList.
+         * Create Scanner object in & reservationAL ArrayList.
          */
         Scanner in = new Scanner(System.in); 
         ArrayList <Reservation> reservationsAL = new ArrayList<>();
@@ -56,7 +49,7 @@ public class CPSC_240_GroupProject1 {
          
                  
         /**
-         * If file is found, makefoodProducts & add foodProducts to foodProducts AL.
+         * If file is found, make reservation objects & add reservations to reservationAL.
          */
         
         //https://www.ics.uci.edu/~irani/s11_22/CodeExamples/FileReaderExceptionsDemoWithComments.java
@@ -72,8 +65,7 @@ public class CPSC_240_GroupProject1 {
                 Reservation newReservation = new Reservation(reservationInfo);
                 reservationsAL.add(newReservation);
             } 
-            System.out.println("The reservation info in the file reservations.text has been successfully imported!");
-            System.out.println(" ");
+            System.out.println("The reservation info in the file reservations.text has been successfully imported!\n");
         }
         
         /**
@@ -102,6 +94,9 @@ public class CPSC_240_GroupProject1 {
             System.out.println("Are you a hotel manager? Please enter YES OR NO.");
             String answer = in.nextLine();
             
+            /**
+             * Code dealing with hotel managers.
+             */
             if(answer.equals("YES")){
                 System.out.println("Please enter your username:");
                 String username = in.nextLine();
@@ -116,17 +111,21 @@ public class CPSC_240_GroupProject1 {
                         + "type the letter below\n");
                 System.out.println("A: Approve reservation");
                 System.out.println("B: Block user");
-                System.out.println("R: Set price");
-                System.out.println("R: Upgrade membership status");
-                System.out.println("R: Delete user account");
+                System.out.println("X: Set price");
+                System.out.println("U: Upgrade membership status");
+                System.out.println("D: Delete user account");
                 System.out.println("Q: Quit the system\n\n");
             }
             
+            
+            /**
+             * Code dealing with registered and non-registered users. 
+             */
             else {
-                 System.out.println("Please enter your username:");
-                 String username = in.nextLine();
-                 System.out.println("Please enter your password:");
-                 String password = in.nextLine();
+                System.out.println("Please enter your username:");
+                String username = in.nextLine();
+                System.out.println("Please enter your password:");
+                String password = in.nextLine();
           
                 
                 /**
@@ -138,13 +137,13 @@ public class CPSC_240_GroupProject1 {
 
                 System.out.println("V: View public schedule as guest");
                 System.out.println("R: Register an account");
-                System.out.println("S: Search for a room (must be a registered user)");
+                System.out.println("L: Look for and/or reserve a room (must be a registered user)");
                 System.out.println("P: Pay for a room");
                 System.out.println("C: Check for approved reservation.");
                 System.out.println("M: Cancel/Modify a reservation");
                 System.out.println("F: Leave feedback");
-                System.out.println("R: Rate the hotel");
-                System.out.println(": Check membership status.");
+                System.out.println("H: Rate the hotel");
+                System.out.println("S: Check membership status.");
                 System.out.println("Q: Quit the system\n\n");
             }
             
@@ -165,7 +164,7 @@ public class CPSC_240_GroupProject1 {
                 try {
                    //https://stackoverflow.com/questions/6994518/how-to-delete-the-content-of-text-file-without-deleting-itself
                    PrintWriter file = new PrintWriter("reservations.txt\n");
-          
+                   file.print("");
 
                    for(int i = 0; i < reservationsAL.size(); i++){
                       file.println(
@@ -180,11 +179,7 @@ public class CPSC_240_GroupProject1 {
                    System.out.println("Error, could not open reservations.txt");
                }
             }
-        }
-        
-        
-        
-        
+        } 
     }            
 }
 
