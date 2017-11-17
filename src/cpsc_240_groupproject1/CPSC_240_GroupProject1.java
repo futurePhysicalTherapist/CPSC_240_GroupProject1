@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * @author KNK
  */
 public class CPSC_240_GroupProject1 {
-
+    
     /**
      * @param args the command line arguments
      * @version 11/15/17 
@@ -32,7 +32,7 @@ public class CPSC_240_GroupProject1 {
          */
 
         System.out.println(" ");
-        System.out.println("Welcome to the WannaStay Reservation Managment System.");
+        System.out.println("Welcome to the WannaStay Reservation Management System.");
         System.out.println(" ");
          
         /**

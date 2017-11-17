@@ -139,7 +139,14 @@ public class Option {
      * Option L - Look for a room/and or reserve a room (must be a registered user).
      */
     public void optionL(){
+        System.out.println("Enter your account number: ");
+        Scanner acctNum = new Scanner(System.in); 
+        //check for acctNum in Registered arraylist
         
+        
+        System.out.println("Enter your password: ");
+        Scanner passWord = new Scanner(System.in); 
+        //check for passWord in Registered arraylist
     }
     
     /**
@@ -157,14 +164,14 @@ public class Option {
     }
     
     /**
-     * Cancel/Modify a reservation").
+     * Option M - Cancel/Modify a reservation.
      */    
     public void optionM(){
         
     }
     
     /**
-     * Option F - Leave feedback
+     * Option F - Leave feedback.
      */
     public void optionF(){
         
