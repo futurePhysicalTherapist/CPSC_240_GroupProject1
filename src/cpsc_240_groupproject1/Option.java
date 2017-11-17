@@ -65,25 +65,29 @@ public class Option {
     
     
     /**
-    * Option B - Block a user. -- THIS ONE MIGHT BE TRICKY TO CODE!
+    * Option B - Block a user.
     */
-    public void optionB(){
+    //public void optionB(){
         
-    }
+    //}
+    
     
     /**
      * Option X - Set price.
      */
-    public void optionX(){
+    //public void optionX(){
         
     }
     
+    /*
     /**
      * Option U - Upgrade membership status.
      */
+    /*
     public void optionU(){
         
     }
+    */
     
     /**
      * Option D - Delete user account. 
@@ -93,7 +97,7 @@ public class Option {
     }
              
     /**
-    * Option V - View public schedule as guest.
+    * Option V - View public schedule as guest -- KATE.
     */
     public void optionV(ArrayList <Reservation> reservationsAL){
         
@@ -136,22 +140,24 @@ public class Option {
      * Option L - Look for a room/and or reserve a room (must be a registered user).
      */
     public void optionL(){
-        
+
     }
+    
     
     /**
      * Option P - Pay for a room.
      */
-    public void optionP(){
+    //public void optionP(){
         
-    }
+    //}
     
     /**
      * Option C - Check for approved reservation.
      */
-    public void optionC(){
+    //public void optionC(){
     
-    }
+    //}
+    
     
     /**
      * Cancel/Modify a reservation").
@@ -163,21 +169,21 @@ public class Option {
     /**
      * Option F - Leave feedback
      */
-    public void optionF(){
+    //public void optionF(){
         
-    }
+    //}
     
     /**
      * Option H – Rate the hotel.
      */
-    public void optionH(){
+    //public void optionH(){
         
-    }
+    //}
     
     /**
      * Option S – Check membership status.
      */
-    public void optionS(){
+    //public void optionS(){
         
-    }
+    //}
 }
