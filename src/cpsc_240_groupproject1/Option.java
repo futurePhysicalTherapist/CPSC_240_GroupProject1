@@ -15,7 +15,10 @@ import java.util.Scanner;
  */
 public class Option {
     String menuSelection;
-    ArrayList <Reservation> reservationsAL;
+    ArrayList <Reservation> reservationsAL = new ArrayList<>();
+    ArrayList <Guest> guestList = new ArrayList<>();
+    ArrayList <Registered> regList = new ArrayList<>();
+    ArrayList <Manager> managerList = new ArrayList<>();
     Scanner in = new Scanner(System.in); 
     
     public Option(String menuSelection, ArrayList reservationsAL){
