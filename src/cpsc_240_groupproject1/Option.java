@@ -90,7 +90,7 @@ public class Option {
     */
     
     /**
-     * Option D - Delete user account. 
+     * Option D - Delete user account. - CHASE
      */
     public void optionD(){
         
