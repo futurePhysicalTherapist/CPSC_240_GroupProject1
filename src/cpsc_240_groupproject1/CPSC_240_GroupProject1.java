@@ -110,9 +110,9 @@ public class CPSC_240_GroupProject1 {
                 System.out.println("Please select an option from the following menu & "
                         + "type the letter below\n");
                 System.out.println("A: Approve reservation");
-                System.out.println("B: Block user");
-                System.out.println("X: Set price");
-                System.out.println("U: Upgrade membership status");
+                //System.out.println("B: Block user");
+                //System.out.println("X: Set price");
+                //System.out.println("U: Upgrade membership status");
                 System.out.println("D: Delete user account");
                 System.out.println("Q: Quit the system\n\n");
             }
@@ -138,12 +138,12 @@ public class CPSC_240_GroupProject1 {
                 System.out.println("V: View public schedule as guest");
                 System.out.println("R: Register an account");
                 System.out.println("L: Look for and/or reserve a room (must be a registered user)");
-                System.out.println("P: Pay for a room");
-                System.out.println("C: Check for approved reservation.");
+                //System.out.println("P: Pay for a room");
+                //System.out.println("C: Check for approved reservation.");
                 System.out.println("M: Cancel/Modify a reservation");
-                System.out.println("F: Leave feedback");
-                System.out.println("H: Rate the hotel");
-                System.out.println("S: Check membership status.");
+                //System.out.println("F: Leave feedback");
+                //System.out.println("H: Rate the hotel");
+                //System.out.println("S: Check membership status.");
                 System.out.println("Q: Quit the system\n\n");
             }
             

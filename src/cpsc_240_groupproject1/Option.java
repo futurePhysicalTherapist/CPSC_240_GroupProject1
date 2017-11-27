@@ -119,8 +119,8 @@ public class Option {
         this.reservationsAL = reservationsAL;
         
         System.out.println("Please type the calendar day you "
-                + "would like to view using the following format:"
-                + "MM.DD.YYYY\n\n");
+                + "would like to view using the following format: "
+                + "MM/DD/YYYY\n\n");
         
         String date = in.nextLine();
         
@@ -182,7 +182,7 @@ public class Option {
     
     
     /**
-     * Option M - Cancel/Modify a reservation.
+     * Option M - Cancel/Modify a reservation. 
      */    
     public void optionM(){
         
