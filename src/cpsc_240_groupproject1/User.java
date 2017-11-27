@@ -9,24 +9,42 @@ package cpsc_240_groupproject1;
  *
  * @author KNK
  */
-public class User {
+public class User 
+{
     String eMail;
     int creditCardNumber;
     
-    public User(){
+    public User()
+    {
         eMail = null;
         creditCardNumber = 0;
     }
     
-    public User(String uEMail, int uCCNum){
+    public User(String uEMail, int uCCNum)
+    {
         eMail = uEMail;
         creditCardNumber = uCCNum;
     }
-    public String getEmail() {return eMail;}
-    public void setEmail(String eMail) {this.eMail = eMail;}
+    public String getEmail() 
+    {
+        return eMail;
+    }
     
-    public int getCreditCardNumber() {return creditCardNumber;}
-    public void setCreditCardNumber(int creditCardNumber) {this.creditCardNumber = creditCardNumber;}
+    public void setEmail(String eMail) 
+    {
+        this.eMail = eMail;
+    }
+    
+    public int getCreditCardNumber() 
+    {
+        return creditCardNumber;
+    }
+    
+    public void setCreditCardNumber(int creditCardNumber) 
+    {
+        this.creditCardNumber = creditCardNumber;
+    }
+    
     
     
     

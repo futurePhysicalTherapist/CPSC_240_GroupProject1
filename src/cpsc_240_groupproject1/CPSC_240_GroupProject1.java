@@ -107,8 +107,7 @@ public class CPSC_240_GroupProject1 {
                 * Lists menu options & reads selection.
                 */
                 System.out.println(" ");
-                System.out.println("Please select an option from the following menu & "
-                        + "type the letter below\n");
+                System.out.println("Please select an option from the following menu & " + "type the letter below\n");
                 System.out.println("A: Approve reservation");
                 //System.out.println("B: Block user");
                 //System.out.println("X: Set price");
@@ -150,23 +149,27 @@ public class CPSC_240_GroupProject1 {
 
             String menuSelection = in.nextLine();
 
-            if(menuSelection != "Q"){
+            if(menuSelection != "Q")
+            {
                 Option selectedOption = new Option(menuSelection, 
                         reservationsAL);  
             }
 
-            if(menuSelection.equals("Q")){
+            if(menuSelection.equals("Q"))
+            {
                 answerIsNotQ = false;
                 System.out.println(" ");
                 System.out.println("You have quit the program. "
                 + "Your reservation records have been saved.\n");
         
-                try {
+                try 
+                {
                    //https://stackoverflow.com/questions/6994518/how-to-delete-the-content-of-text-file-without-deleting-itself
                    PrintWriter file = new PrintWriter("reservations.txt\n");
                    file.print("");
 
-                   for(int i = 0; i < reservationsAL.size(); i++){
+                   for(int i = 0; i < reservationsAL.size(); i++)
+                   {
                       file.println(
                               reservationsAL.get(i).getDate() + "," +
                               reservationsAL.get(i).getTime() + "," +
@@ -175,7 +178,8 @@ public class CPSC_240_GroupProject1 {
 
                    file.close();
 
-               } catch (FileNotFoundException e) {
+               } catch (FileNotFoundException e) 
+               {
                    System.out.println("Error, could not open reservations.txt");
                }
             }

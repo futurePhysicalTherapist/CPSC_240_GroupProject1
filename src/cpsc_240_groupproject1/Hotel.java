@@ -9,14 +9,16 @@ package cpsc_240_groupproject1;
  *
  * @author KNK
  */
-public class Hotel {
+public class Hotel 
+{
     public String hotelName = "WannaStay";
     public String location;
     public boolean hasPool;
     public boolean hasBreakfast;
     public boolean airportShuttle;
     
-    public Hotel(){
+    public Hotel()
+    {
         hotelName = null;
         location = null;
         hasPool = false;
@@ -24,7 +26,8 @@ public class Hotel {
         airportShuttle = false;
     }
     
-    public Hotel(String hotelLoc, boolean pool, boolean breakfast, boolean shuttle){
+    public Hotel(String hotelLoc, boolean pool, boolean breakfast, boolean shuttle)
+    {
         location = hotelLoc;
         hasPool = pool;
         hasBreakfast = breakfast;

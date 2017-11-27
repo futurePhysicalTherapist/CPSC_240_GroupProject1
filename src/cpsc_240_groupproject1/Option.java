@@ -13,7 +13,8 @@ import java.util.Scanner;
  * @author KNK
  * @version 11/15/17 
  */
-public class Option {
+public class Option
+{
     String menuSelection;
     ArrayList <Reservation> reservationsAL = new ArrayList<>();
     ArrayList <Guest> guestList = new ArrayList<>();
@@ -21,7 +22,8 @@ public class Option {
     ArrayList <Manager> managerList = new ArrayList<>();
     Scanner in = new Scanner(System.in); 
     
-    public Option(String menuSelection, ArrayList reservationsAL){
+    public Option(String menuSelection, ArrayList reservationsAL)
+    {
         this.menuSelection = menuSelection;
         this.reservationsAL = reservationsAL;
                
@@ -39,16 +41,20 @@ public class Option {
         
         */
       
-        if(menuSelection.equals("D")){
+        if(menuSelection.equals("D"))
+        {
             optionD();
         }    
-        if(menuSelection.equals("V")){
+        if(menuSelection.equals("V"))
+        {
             optionV(reservationsAL);
         }
-        if(menuSelection.equals("R")){
+        if(menuSelection.equals("R"))
+        {
             optionR();
         }
-        if(menuSelection.equals("L")){
+        if(menuSelection.equals("L"))
+        {
             optionL();
         }
         
@@ -61,7 +67,8 @@ public class Option {
         }
         */
         
-        if(menuSelection.equals("M")){
+        if(menuSelection.equals("M"))
+        {
             optionM();
         }
         
@@ -107,14 +114,16 @@ public class Option {
     /**
      * Option D - Delete user account. - CHASE
      */
-    public void optionD(){
+    public void optionD()
+    {
         
     }
              
     /**
     * Option V - View public schedule as guest -- KATE.
     */
-    public void optionV(ArrayList <Reservation> reservationsAL){
+    public void optionV(ArrayList <Reservation> reservationsAL)
+    {
         
         this.reservationsAL = reservationsAL;
         
@@ -126,8 +135,10 @@ public class Option {
         
         boolean reservationsExist = false;
                 
-        for(int i = 0; i < reservationsAL.size(); i++){
-            if(reservationsAL.get(i).getDate().equals(date)){
+        for(int i = 0; i < reservationsAL.size(); i++)
+        {
+            if(reservationsAL.get(i).getDate().equals(date))
+            {
                 reservationsExist = true;
                 //System.out.println(Reservation.getReservationInformation());
                 System.out.println(
@@ -138,7 +149,8 @@ public class Option {
             }
         }
         
-        if(reservationsExist = false){
+        if(reservationsExist = false)
+        {
             System.out.println("There are no reservations on this date.");
         }
     }
@@ -146,7 +158,8 @@ public class Option {
     /**
      * Option R - Register an account.
      */
-    public void optionR(){
+    public void optionR()
+    {
          Registered newRegistered = new Registered();
         
     }
@@ -154,7 +167,8 @@ public class Option {
     /**
      * Option L - Look for a room/and or reserve a room (must be a registered user). - SIERRA
      */
-    public void optionL(){
+    public void optionL()
+    {
         System.out.println("Enter your account number: ");
         Scanner acctNum = new Scanner(System.in); 
         //check for acctNum in Registered arraylist
@@ -163,6 +177,8 @@ public class Option {
         System.out.println("Enter your password: ");
         Scanner passWord = new Scanner(System.in); 
         //check for passWord in Registered arraylist
+        
+        System.out.println("Would you like to reserve a room");
     }
     
     
@@ -184,7 +200,8 @@ public class Option {
     /**
      * Option M - Cancel/Modify a reservation. 
      */    
-    public void optionM(){
+    public void optionM()
+    {
         
     }
     

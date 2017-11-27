@@ -35,7 +35,8 @@ public class Room
 
     }
     
-    public Room(int roomNumber, int roomCapacity, boolean smoke, boolean reserve, boolean access, double price, String type  ){
+    public Room(int roomNumber, int roomCapacity, boolean smoke, boolean reserve, boolean access, double price, String type  )
+    {
         roomNum = roomNumber;
         capacity = roomCapacity;
         smoking = smoke;
