@@ -152,7 +152,7 @@ public class Option {
     }
     
     /**
-     * Option L - Look for a room/and or reserve a room (must be a registered user).
+     * Option L - Look for a room/and or reserve a room (must be a registered user). - SIERRA
      */
     public void optionL(){
         System.out.println("Enter your account number: ");
