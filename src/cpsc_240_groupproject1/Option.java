@@ -15,13 +15,17 @@ import java.util.Scanner;
  */
 public class Option {
     String menuSelection;
-    ArrayList <Reservation> reservationsAL;
+    ArrayList <Reservation> reservationsAL = new ArrayList<>();
+    ArrayList <Guest> guestList = new ArrayList<>();
+    ArrayList <Registered> regList = new ArrayList<>();
+    ArrayList <Manager> managerList = new ArrayList<>();
     Scanner in = new Scanner(System.in); 
     
     public Option(String menuSelection, ArrayList reservationsAL){
         this.menuSelection = menuSelection;
         this.reservationsAL = reservationsAL;
                
+        /*
         if(menuSelection.equals("B")){
             optionB();
         }
@@ -31,6 +35,10 @@ public class Option {
         if(menuSelection.equals("U")){
             optionU();
         }
+        /*
+        
+        */
+      
         if(menuSelection.equals("D")){
             optionD();
         }    
@@ -43,15 +51,21 @@ public class Option {
         if(menuSelection.equals("L")){
             optionL();
         }
+        
+        /*
         if(menuSelection.equals("P")){
             optionP();
         }
         if(menuSelection.equals("C")){
             optionC();
         }
+        */
+        
         if(menuSelection.equals("M")){
             optionM();
         }
+        
+        /*
         if(menuSelection.equals("F")){
             optionF();
         }
@@ -61,6 +75,7 @@ public class Option {
         if(menuSelection.equals("S")){
             optionS();
         }
+        */
     }
     
     
@@ -77,7 +92,7 @@ public class Option {
      */
     //public void optionX(){
         
-    }
+    
     
     /*
     /**
@@ -160,14 +175,14 @@ public class Option {
     
     
     /**
-     * Cancel/Modify a reservation").
+     * Option M - Cancel/Modify a reservation.
      */    
     public void optionM(){
         
     }
     
     /**
-     * Option F - Leave feedback
+     * Option F - Leave feedback.
      */
     //public void optionF(){
         

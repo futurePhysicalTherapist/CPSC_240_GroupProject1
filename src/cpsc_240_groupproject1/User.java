@@ -22,20 +22,13 @@ public class User {
         eMail = uEMail;
         creditCardNumber = uCCNum;
     }
+    public String getEmail() {return eMail;}
+    public void setEmail(String eMail) {this.eMail = eMail;}
     
-    public void setEmail(String eMail) {
-        this.eMail = eMail;
-    }
+    public int getCreditCardNumber() {return creditCardNumber;}
+    public void setCreditCardNumber(int creditCardNumber) {this.creditCardNumber = creditCardNumber;}
     
-    public void setCreditCardNumber(int creditCardNumber) {
-        this.creditCardNumber = creditCardNumber;
-    }
     
-    public String getEmail() {
-        return eMail;
-    }
     
-    public int getCreditCardNumber() {
-        return creditCardNumber;
-    }
+
 }
