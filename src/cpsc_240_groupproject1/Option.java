@@ -161,11 +161,15 @@ public class Option
     public void optionR()
     {
          Registered newRegistered = new Registered();
-         
-         System.out.println("Enter a unique six digit account number: ");
          Scanner acctNum = new Scanner(System.in);
+         System.out.println("Enter a unique six digit account number: ");
+         String acctNum1 = acctNum.next();
+         newRegistered.setAccountNum(acctNum1);
+         acctNum1 = acctNum1.replaceAll("[^A-Z]","");
+         System.out.println(acctNum1);
          //user search method to check for acct number in arrayList
          //if acct number has been taken, print out an error
+         
          System.out.println("Enter a unique eight character password: ");
          Scanner passWord = new Scanner(System.in);
     }
